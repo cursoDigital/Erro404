@@ -58,12 +58,18 @@ ul {
 
 .container main {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 .container main .esquerda {
     width: 50%;
+    height: 100%;
+}
+
+.container main .esquerda img {
+    width: 100%;
     height: 100%;
 }
 
@@ -85,4 +91,23 @@ ul {
 .container main .direita .secao-2 .botoes {
     display: flex;
     gap: 15px;
+}
+
+.container main .direita .secao-2 .botoes .botao {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container main .direita .secao-2 .botoes .primario {
+    border: none;
+    background-color: #3E68B6;
+}
+
+.container main .direita .secao-2 .botoes .primario a{
+    color: white;
+}
+
+.container main .direita .secao-2 .botoes .secundario {
+    background-color: transparent;
+    border: none;
 }
