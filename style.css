@@ -20,7 +20,6 @@ ul {
 }
 
 .container .navegacao {
-    background-color: #3E68B6;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
@@ -107,7 +106,81 @@ ul {
     color: white;
 }
 
+
 .container main .direita .secao-2 .botoes .secundario {
+    border: 1px solid transparent;
     background-color: transparent;
-    border: none;
+    transition: all 500ms ease;
+}
+
+.container main .direita .secao-2 .botoes .secundario a {
+    color: #3E68B6;
+}
+
+.container main .direita .secao-2 .botoes .secundario:hover {
+    border: 1px solid #3E68B6
+}
+
+.container footer {
+    display: flex;
+}
+
+.container footer .direito {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.container footer .esquerdo {
+    width: 50%;
+}
+
+.container footer .direito .redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.container footer .direito .redes-sociais i {
+    font-size: 30px;
+}
+
+#menu {
+    display: none;
+}
+
+
+@media (max-width: 620px) {
+    .container .navegacao .links {
+        display: none;
+    }
+}
+
+@media (max-width: 615px) {
+    #menu{
+        display: block;
+        align-items: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .container main {
+        flex-direction: column;
+    }
+
+    .container main .esquerda {
+        width: 100%;
+    }
+
+    .container main .esquerda img {
+        width: 100%;
+    }
+
+    .container main .direita {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
 }
